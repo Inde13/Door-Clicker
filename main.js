@@ -1,15 +1,9 @@
 const availableUpgColor = "rgb(30, 255, 50)"
 const unavailableUpgColor = "rgb(255, 30, 50)"
 
-localStorage.clear()
-
 var doorSwitch = true
 var doors = 0
-var doorsClosed = loadData("doorsClosed")
-
-if (doorsClosed === null) {
-								doorsClosed = 10
-}
+var doorsClosed = 10
 
 var upgrades = {
 								moreDoors: {
@@ -17,6 +11,8 @@ var upgrades = {
 																price: 10
 								}
 }
+
+updateAll()
 
 function switchDoorState() {
 								if (doors == 0) {
@@ -70,9 +66,4 @@ function updateAll() {
 								updateCurrencies()
 								
 								updateUpgButton("buyNewDoor", upgrades.moreDoors)
-}
-
-// EXPERIMENTAL TEST
-function saveDoorsClosed() {
-								saveData("doors_closed", doorsClosed.toString())
 }
