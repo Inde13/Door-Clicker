@@ -1,0 +1,41 @@
+<!DOCTYPE html><html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Door Clicker</title>
+				<link rel="stylesheet" href="style.css">
+</head>
+<body>
+				
+				<div id="currency-display">
+								<div class="currency doors-closed">
+												Doors closed: 10
+								</div>
+				</div>
+				
+				<hr>
+				
+				<div id="actions">
+								<button class="btn doorSwitch" onclick="switchDoorState()">
+												Close door
+								</button>
+				</div>
+				
+				<hr>
+				
+				<div id="upgrades">
+								<button class="btn upgrade buyNewDoor" onclick="buyNewDoor()">
+												<p class="description">Adds one more door to your room</p>
+												<p class="current">Current: 0</p>
+												<p class="price">Price: 10 Doors closed</p>
+								</button>
+				</div>
+				
+				<hr>
+				
+				<p>Testing (Experimental feature. Could cause bugs/glitches)</p>
+				<button id="save" onclick="saveDoorsClosed()">Save</button>
+</body>
+<script src="utils.js"></script>
+<script src="main.js"></script>
+</html>
