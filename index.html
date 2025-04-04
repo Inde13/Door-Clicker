@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 				<meta charset="UTF-8">
 				<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,6 +7,10 @@
 				<link rel="stylesheet" href="style.css">
 </head>
 <body>
+				<header>
+								<img src="Images/GameNameFull.png">
+								<div class="version">v0.1 Alpha</div>
+				</header>
 				
 				<div id="currency-display">
 								<div class="currency doors-closed">
@@ -25,7 +30,7 @@
 				
 				<div id="upgrades">
 								<button class="btn upgrade buyNewDoor" onclick="buyNewDoor()">
-												<p class="description">Adds one more door to your room</p>
+												<p class="description">Add one more door to your room</p>
 												<p class="current">Current: 0</p>
 												<p class="price">Price: 10 Doors closed</p>
 								</button>
@@ -34,8 +39,15 @@
 				<hr>
 				
 				<footer>
-								<p>This game has no saving system yet.</p>
-								<p>All your progress will be lost upon closing or reloading the page</p>
+								<div class="warning">
+												<p>This game has no saving system yet.</p>
+												<p>All your progress will be lost upon closing or reloading the page.</p>
+								</div>
+								
+								<div id="bottom">
+												<p id="github">&copy; 2025 <a href="https://github.com/Inde13">Inde13</a></p>
+												<a id="changelog" href="changelog.html">Changelog</a>
+								</div>
 				</footer>
 </body>
 <script src="utils.js"></script>

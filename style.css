@@ -8,6 +8,21 @@
   user-select: none;
 }
 
+header {
+  display: flex;
+  margin: 5px;
+  max-height: 4vh;
+}
+
+header img {
+  max-height: 4vh;
+}
+
+.version {
+  margin-bottom: auto;
+  font-size: 80%
+}
+
 #currency-display {
   margin: 10px;
   padding: 10px;
@@ -45,11 +60,71 @@
   margin-bottom: 5px;
 }
 
-footer {
+.warning {
   background: rgb(200, 200, 200);
-  margin: 10px;
   padding: 5px;
-  font-size: 75%;
+}
+
+footer {
+  background: rgb(40, 20, 25);
+  width: 100%;
+  bottom: 0%;
+  font-size: 65%;
+  position: fixed;
+}
+
+#bottom {
+  padding: 5px 10px;
+  display: flex;
+}
+
+footer p#github {
+  color: white;
+}
+
+footer a#changelog {
+  margin-left: auto;
+}
+
+footer a {
+  text-decoration: under;
+  color: white;
+}
+
+/* Changelog page */
+
+#back {
+  margin: 10px;
   border: 1px solid black;
-  border-radius: 5px;
+  padding: 5px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back a {
+  text-decoration: none;
+  font-size: 90%;
+  color: black;
+}
+
+main h1 {
+  font-size: 120%;
+  font-family: Arial;
+  margin: 10px;
+  text-align: center;
+}
+
+.version-description {
+  margin: 20px;
+  font-size: 90%;
+}
+
+.version-description p {
+  margin: 10px;
+}
+
+.version-description ul {
+  margin: 20px;
 }
